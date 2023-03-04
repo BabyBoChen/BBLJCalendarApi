@@ -4,7 +4,7 @@ const url = require("url");
 const fs = require("fs");
 const calendarService = require("./services/calendarService.js");
 
-const PORT = 8080;
+const PORT = process.env.PORT || 3001;
 
 const MIME_TYPES = {
     default: 'application/octet-stream',
