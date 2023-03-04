@@ -4,6 +4,7 @@
     "sqlite3": "^5.1.4"
   },
   "scripts": {
-    "dev": "npx nodemon main.js"
+    "dev": "npx nodemon app.js",
+    "start": "node app.js"
   }
 }
