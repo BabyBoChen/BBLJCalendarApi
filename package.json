@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "nodemon": "^2.0.20",
+    "sqlite3": "^5.1.4"
+  },
+  "scripts": {
+    "dev": "npx nodemon main.js"
+  }
+}

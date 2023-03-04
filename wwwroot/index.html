@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+
+    <title>BBLJ行事曆API</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <p>請使用query string查閱BBLJ行事曆</p>
+    <p>範例: <a id="queryLink" href="/api?y=yyyy&m=m">/api?y=yyyy&m=m</a></p>
+    <script>
+        window.addEventListener("DOMContentLoaded", onLoaded);
+        function onLoaded() {
+            /** @type {HTMLAnchorElement}*/
+            let link = document.getElementById("queryLink");
+            link.href = `/api?y=${(new Date()).getFullYear()}&m=${(new Date()).getMonth() + 1}`;
+            link.innerHTML = `/api?y=${(new Date()).getFullYear()}&m=${(new Date()).getMonth() + 1}`;
+        }
+    </script>
+</body>
+</html>
