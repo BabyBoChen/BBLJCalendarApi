@@ -1,10 +1,12 @@
 {
   "dependencies": {
     "nodemon": "^2.0.20",
-    "sqlite3": "^5.1.4"
+    "sqlite3": "^5.1.4",
+    "yarn": "^1.22.19"
   },
   "scripts": {
     "dev": "npx nodemon app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "yarn_install": "yarn install"
   }
 }
